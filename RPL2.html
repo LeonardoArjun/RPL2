@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prestasi Moklet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+      <div class="bg-blue-600 text-white text-center p-4 text-xl font-bold">
+        Gundam video
+      </div>
+      <div class="flex mt-4">
+        <!-- Video Section -->
+        <div class="w-3/4 p-4">
+          <iframe
+            id="videoFrame"
+            class="w-full h-[600px]"
+            src="https://www.youtube.com/embed/OWzSloOZqhw?si=ws6GVCI3KtmnfUUK"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- Prestasi List -->
+        <div class="w-1/4 p-4 bg-gray-200 rounded">
+          <button
+            class="block w-full bg-white p-2 mb-2 rounded shadow"
+            onclick="changeVideo('https://www.youtube.com/embed/OWzSloOZqhw?si=ws6GVCI3KtmnfUUK')"
+          >
+            Section 1
+          </button>
+          <button
+            class="block w-full bg-white p-2 mb-2 rounded shadow"
+            onclick="changeVideo('https://www.youtube.com/embed/-tyKgrIjIqk?si=9FSVkNtkHoY4LGZc')"
+          >
+            Section 2
+          </button>
+          <button
+            class="block w-full bg-white p-2 mb-2 rounded shadow"
+            onclick="changeVideo('https://www.youtube.com/embed/4uRMdJsjN-4?si=XLJFVXUMAv41JeYe')"
+          >
+            Section 3
+          </button>
+          <button
+            class="block w-full bg-white p-2 mb-2 rounded shadow"
+            onclick="changeVideo('https://www.youtube.com/embed/sJXbUhBilcc?si=qqwLQ4YacsoP-9-Z')"
+          >
+            Section 4
+          </button>
+          <button
+            class="block w-full bg-white p-2 mb-2 rounded shadow"
+            onclick="changeVideo('https://www.youtube.com/embed/DwBddRWGU8s?si=6KP2rMw8ean46NTC')"
+          >
+            Section 5
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-blue-600 text-white text-center p-3 mt-1 text-sm">
+      <marquee behavior="scroll " direction="left"
+        >Toy == Good | Gundam == Toy | Gundam == Good</marquee
+      >
+    </div>
+    <script>
+      function changeVideo(url) {
+        document.getElementById("videoFrame").src = url;
+      }
+    </script>
+  </body>
+</html>
